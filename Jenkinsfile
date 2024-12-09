@@ -3,18 +3,23 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                        echo 'Hi, this is Srujan from LevelUp360'
+                        echo 'Hi, this is Srujan from Up360'
                         echo 'We are Starting the Testing'
                   }
             }
             stage('Build') {
                   steps {
-                        echo 'Building Sample Maven Project'
+                        echo 'Building Dev Maven Project'
                   }
             }
             stage('Deploy') {
                   steps {
                         echo "Deploying in Staging Area"
+                  }
+            }
+            stage('Deploy Pre-Production') {
+                  steps {
+                        echo "Deploying in Pre-Production Area"
                   }
             }
             stage('Deploy Production') {
