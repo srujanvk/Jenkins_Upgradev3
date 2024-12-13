@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Ubuntu-Agent' }
+    agent { label 'Master' }
     stages {
         stage('Build Application') {
             steps {
